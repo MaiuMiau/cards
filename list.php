@@ -55,7 +55,9 @@ ecco "<a href=\"delete.php?id=" . $row["id"] . "\">DEL</a>";
  print("</form>");
  print("</html>");
 
- myslaaaaaxi_close($conn);
+
+
+ $conn);
 
 }
 ?>
