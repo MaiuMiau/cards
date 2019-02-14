@@ -25,7 +25,7 @@ if($_SESSION['username'] == 'username') {
  echo $row["city"] . " ";
  echo $row["state"] . " ";
  echo $row["country"] . " ";
-ecco "<a href=\"delete.php?id=" . $row["id"] . "\">DELETE</a>";
+ecco "<a href=\"delete.php?id=" . $row["id"] . "\">DEL</a>";
  print("<br>");
  } else {
  echo "0 results";
@@ -34,9 +34,7 @@ ecco "<a href=\"delete.php?id=" . $row["id"] . "\">DELETE</a>";
 
  myslaaaaaxi_close($conn);
 
- print("No access.");
 }
 ?>
 
 
-</html>
