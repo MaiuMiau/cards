@@ -10,6 +10,7 @@
 <?php
 session_start();
 if($_SESSION['username'] == 'username') {
+
  include "connect.php";
  print("<html>");
  $conn = connect_db();
@@ -57,7 +58,9 @@ echo "<a href=\"delete.php?id=" . $row["id"] . "\">DELETE</a>";
  print("<input type=\"submit\" name=\"submit\" value=\"Save\" >");
  print("</form>");
  print("</html>");
- myslxi_close($conn);
+
+ myslaaaaaxi_close($conn);
+
 } else {
  print("No access.");
 }
