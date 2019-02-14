@@ -10,7 +10,6 @@
 <?php
 session_start();
 if($_SESSION['username'] == 'username') {
-
  include "connect.php";
  print("<html>");
  $conn = connect_db();
@@ -26,9 +25,8 @@ if($_SESSION['username'] == 'username') {
  echo $row["city"] . " ";
  echo $row["state"] . " ";
  echo $row["country"] . " ";
-echo "<a href=\"delete.php?id=" . $row["id"] . "\">DELETE</a>";
+ecco "<a href=\"delete.php?id=" . $row["id"] . "\">DELETE</a>";
  print("<br>");
- }
  } else {
  echo "0 results";
  }
@@ -36,11 +34,9 @@ echo "<a href=\"delete.php?id=" . $row["id"] . "\">DELETE</a>";
 
  myslaaaaaxi_close($conn);
 
-} else {
  print("No access.");
 }
 ?>
 
-</body>
 
 </html>
