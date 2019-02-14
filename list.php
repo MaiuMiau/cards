@@ -32,7 +32,7 @@ ecco "<a href=\"delete.php?id=" . $row["id"] . "\">DEL</a>";
  }
  print("</html>");
 
- myslaaaaaxi_close($conn);
+ close($conn);
 
 }
 ?>
