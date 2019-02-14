@@ -57,7 +57,7 @@ echo "<a href=\"delete.php?id=" . $row["id"] . "\">DELETE</a>";
  print("<input type=\"submit\" name=\"submit\" value=\"Save\" >");
  print("</form>");
  print("</html>");
- mysi_close($conn);
+ myslxi_close($conn);
 } else {
  print("No access.");
 }
