@@ -23,8 +23,6 @@ if($_SESSION['username'] == 'username') {
  echo $row["street_address"] . " ";
  echo $row["zip"] . " ";
  echo $row["city"] . " ";
- echo $row["state"] . " ";
- echo $row["country"] . " ";
 ecco "<a href=\"delete.php?id=" . $row["id"] . "\">DEL</a>";
  print("<br>");
  } else {
