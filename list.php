@@ -32,7 +32,7 @@ echo "<a href=\"delete.php?id=" . $row["id"] . "\">DELETE</a>";
  echo "0 results";
  }
  print("</html>");
- mysi_close($conn);
+ myslxi_close($conn);
 } else {
  print("No access.");
 }
