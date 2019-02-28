@@ -6,6 +6,7 @@
 </head>
 
 <body>
+<p>moro</p>
 <?php
 session_start();
 if($_SESSION['username'] == 'username') {
@@ -22,15 +23,11 @@ if($_SESSION['username'] == 'username') {
  echo $row["street_address"] . " ";
  echo $row["zip"] . " ";
  echo $row["city"] . " ";
- echo $row["state"] . " ";
- echo $row["country"] . " ";
- echo "<a href=\"delete.php?id=" . $row["id"] . "\">DELETE</a>";
+ecco "<a href=\"delete.php?id=" . $row["id"] . "\">DEL</a>";
  print("<br>");
- }
  } else {
  echo "0 results";
-
-}
+ }
  print("<br><br>");
  print("Insert new");
  print("<form action=\"save.php\" method=\"post\">");
@@ -57,12 +54,12 @@ if($_SESSION['username'] == 'username') {
  print("<input type=\"submit\" name=\"submit\" value=\"Save\" >");
  print("</form>");
  print("</html>");
- mysqli_close($conn);
-} else {
- print("No access.");
+
+
+
+ close($conn);
+
 }
 ?>
 
-</body>
-</html>
 
