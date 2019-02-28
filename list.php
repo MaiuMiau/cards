@@ -6,12 +6,12 @@
 </head>
 
 <body>
-<p>moro</p>
+
 <?php
 session_start();
 if($_SESSION['username'] == 'username') {
  include "connect.php";
- print("<html>");
+print("<html>");
  $conn = connect_db();
  $sql = "SELECT * FROM Addresses";
  $result = mysqli_query($conn, $sql);
@@ -23,11 +23,15 @@ if($_SESSION['username'] == 'username') {
  echo $row["street_address"] . " ";
  echo $row["zip"] . " ";
  echo $row["city"] . " ";
-ecco "<a href=\"delete.php?id=" . $row["id"] . "\">DEL</a>";
+ echo $row["state"] . " ";
+ echo $row["country"] . " ";
+ echo "<a href=\"delete.php?id=" . $row["id"] . "\">DELETE</a>";
  print("<br>");
+ }
  } else {
  echo "0 results";
- }
+
+}
  print("<br><br>");
  print("Insert new");
  print("<form action=\"save.php\" method=\"post\">");
@@ -54,12 +58,11 @@ ecco "<a href=\"delete.php?id=" . $row["id"] . "\">DEL</a>";
  print("<input type=\"submit\" name=\"submit\" value=\"Save\" >");
  print("</form>");
  print("</html>");
-
-
-
- close($conn);
-
+ mysqli_close($conn);
+} else {
+ print("No access.");
 }
 ?>
 
-
+</body>
+</html>
